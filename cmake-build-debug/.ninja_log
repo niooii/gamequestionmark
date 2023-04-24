@@ -1,0 +1,22 @@
+# ninja log v5
+5	222	7040094961253842	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+1	164	7040108232515408	gamequestionmark.exe	48aee8f7cdc0cfa0
+1	217	7040108646123042	build.ninja	8c76e5aaee7cce4b
+1	188	7040108696867577	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+189	329	7040108698233920	gamequestionmark.exe	48aee8f7cdc0cfa0
+1	231	7040109590160036	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+232	386	7040109591675984	gamequestionmark.exe	48aee8f7cdc0cfa0
+2	204	7040109872230884	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+205	345	7040109873597222	gamequestionmark.exe	48aee8f7cdc0cfa0
+2	198	7040110777027104	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+198	336	7040110778373506	gamequestionmark.exe	48aee8f7cdc0cfa0
+1	247	7040111050530469	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+248	416	7040111052186040	gamequestionmark.exe	48aee8f7cdc0cfa0
+2	259	7040112181229270	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+259	439	7040112183007101	gamequestionmark.exe	48aee8f7cdc0cfa0
+1	209	7040117171678589	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+209	355	7040117173110247	gamequestionmark.exe	48aee8f7cdc0cfa0
+2	210	7040134639468451	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+210	367	7040134641034568	gamequestionmark.exe	48aee8f7cdc0cfa0
+1	196	7040153296242006	CMakeFiles/gamequestionmark.dir/main.c.obj	cabf0d6499a5f02b
+197	335	7040153297608356	gamequestionmark.exe	48aee8f7cdc0cfa0
