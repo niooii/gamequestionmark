@@ -1,4 +1,8 @@
 "C:\Program Files\JetBrains\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.1.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\hewit\CLionProjects\gamequestionmark -B C:\Users\hewit\CLionProjects\gamequestionmark\cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/hewit/CLionProjects/gamequestionmark/cmake-build-debug
+CMake Error at CMakeLists.txt:13 (TARGET_LINK_LIBRARIES):
+  Cannot specify link libraries for target "server" which is not built by
+  this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/hewit/CLionProjects/gamequestionmark/cmake-build-debug/CMakeFiles/CMakeOutput.log".

@@ -7,12 +7,13 @@
 #include <GL/glut.h>
 #include <math.h>
 #define PI 3.1415926535
+#define PI2 PI/2
+#define PI3 3*PI/2
 
 const int WIDTH = 512;
 const int HEIGHT = 512;
 
-float playerX, playerY; //player position
-float playerDeltaX, playerDeltaY, playerAngle;
+float playerX, playerY, playerDeltaX, playerDeltaY, playerAngle; //player position
 
 const int mapX = 8, mapY = 8, mapSize = 64;
 
@@ -30,8 +31,7 @@ int map[] =
 
 void drawRays3D()
 {
-    double rayAngle;
-    float rayX, rayY, xOffset, yOffset;
+    float rayX, rayY, rayAngle, xOffset, yOffset;
     int ray, mX, mY, mapPosition, dof;
     rayAngle = playerAngle;
     for(ray = 0; ray < 1; ray++){
@@ -57,8 +57,7 @@ void drawRays3D()
         }
         while(dof < 8)
         {
-            mX = (int)(rayX) >> 6;
-            mY = (int)(rayY) >> 6;
+            mX = (int)(rayX) >> 6; mY = (int)(rayY) >> 6;
             mapPosition = mY * mapX + mX;
             if(mapPosition < mapX * mapY && map[mapPosition] == 1){
                 dof = 8;
@@ -119,9 +118,7 @@ void buttons(unsigned char key, int x, int y){
     {
         playerAngle-=0.1;
         if(playerAngle < 0)
-        {
             playerAngle += 2*PI;
-        }
         playerDeltaX = cos(playerAngle) * 5;
         playerDeltaY = sin(playerAngle) * 5;
     }
@@ -129,9 +126,7 @@ void buttons(unsigned char key, int x, int y){
     {
         playerAngle+=0.1;
         if(playerAngle > 2*PI)
-        {
             playerAngle -= 2*PI;
-        }
         playerDeltaX = cos(playerAngle) * 5;
         playerDeltaY = sin(playerAngle) * 5;
     }
@@ -166,6 +161,7 @@ void init(){
 }
 
 int main(int argc, char* argv[]) {
+    SOCKET sock;
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
     glutInitWindowSize(WIDTH, HEIGHT);
